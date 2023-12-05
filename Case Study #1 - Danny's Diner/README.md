@@ -272,7 +272,7 @@ ORDER BY customer_id;
 
 ## Bonus Questions:
 
-                                                                **Join All The Things**
+### Join All The Things:
 
 The following questions are related creating basic data tables that Danny and his team can use to quickly derive insights without needing to join the underlying tables using SQL.
 
@@ -325,7 +325,7 @@ FROM sales_products_members;
 ![bonus_ans_1](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/a9ebfd3f-99f5-40fe-8fef-4b512c1ddef9)
 
 
-                                                                   **Rank All The Things**
+### Rank All The Things:
 
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
 
