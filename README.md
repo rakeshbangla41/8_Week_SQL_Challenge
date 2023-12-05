@@ -1,6 +1,6 @@
 # 8 Week SQL Challenge   
 
-This repository contains my solutions for the SQL case studies from the #8WeekSQLChallenge. I have used MYSQL Workbench for quering and retrieving data.
+This repository contains my solutions for the SQL case studies from the #8WeekSQLChallenge. I have used MySQL Workbench for quering and retrieving data.
 
 By solving these case studies, I have improved my technical SQL skills and also on how to tackle and solve a given question.  
 
