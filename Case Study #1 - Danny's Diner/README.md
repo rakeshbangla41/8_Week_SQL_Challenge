@@ -20,7 +20,12 @@ He plans on using these insights to help him decide whether he should expand the
 
 **1. What is the total amount each customer spent at the restaurant?**
 
-```red
+```diff
+- text in red
++ text in blue
+```
+
+```
 SELECT 
   s.customer_id, SUM(m.price) AS total_amount_spent 
 FROM sales s JOIN menu m 
