@@ -25,12 +25,13 @@ He plans on using these insights to help him decide whether he should expand the
 SELECT 
   s.customer_id, SUM(m.price) AS total_amount_spent 
 FROM sales s JOIN menu m 
-ON s.product_id=m.product_id 
+ON s.product_id = m.product_id 
 GROUP BY customer_id
 ORDER BY s.customer_id;
 
 ```
 **Answer:**
+
 
 ![1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/2869e429-edcb-4719-9c50-74be4be70454)
 
@@ -47,6 +48,7 @@ ORDER BY customer_id;
 
 **Answer:**
 
+
 ![2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1021d4c8-27fe-4682-8087-9bde5d372e79)
 
 
@@ -57,16 +59,17 @@ WITH ordered_items AS
 (SELECT 
   customer_id, product_name, order_date, RANK() OVER(PARTITION BY customer_id ORDER BY order_date) AS rnk 
 FROM sales s JOIN menu m 
-ON s.product_id=m.product_id)
+ON s.product_id = m.product_id)
 
 SELECT 
   customer_id, order_date, product_name 
 FROM ordered_items 
-WHERE rnk=1;
+WHERE rnk = 1;
 
 ```
 
 **Answer:**
+
 
 ![3ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/ae013149-9b4a-4a09-a57c-f7dd2ba3c88d)
 
@@ -85,6 +88,7 @@ ORDER BY no_of_times_ordered DESC LIMIT 1;
 
 **Answer:**
 
+
 ![4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/126b9823-56fc-4608-ae7b-11ffd7635f2f)
 
 **Q5. Which item was the most popular for each customer?**
@@ -94,7 +98,7 @@ WITH product_times_ordered AS
 (SELECT 
   customer_id, product_name, COUNT(*) AS times_ordered 
 FROM sales s JOIN menu m 
-ON s.product_id=m.product_id 
+ON s.product_id = m.product_id 
 GROUP BY customer_id, product_name),
 
 product_times_ranked AS
@@ -105,11 +109,12 @@ FROM product_times_ordered)
 SELECT 
   customer_id, product_name, times_ordered 
 FROM product_times_ranked 
-WHERE rnk=1;
+WHERE rnk = 1;
 
 ```
 
 **Answer:**
+
 
 ![5ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/e82d694f-88b4-4782-bed2-a2c09bf52c8f)
 
@@ -135,11 +140,12 @@ FROM member_joined_orders_after)
 SELECT
   customer_id, product_name
 FROM orders_ranked
-WHERE rnk=1;
+WHERE rnk = 1;
 
 ```
 
 **Answer:**
+
 
 ![6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/dcf5ddd1-bd73-429a-9210-714df2f3c4df)
 
@@ -165,7 +171,7 @@ FROM member_joined_orders_before)
 SELECT
   customer_id, product_name
 FROM orders_ranked
-WHERE rnk=1;
+WHERE rnk = 1;
 
 ```
 
@@ -185,6 +191,7 @@ GROUP BY customer_id ORDER BY customer_id;
 
 **Answer:**
 
+
 ![8ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/bc661a05-16b7-4729-89fc-fd9bc65ae253)
 
 
@@ -195,7 +202,7 @@ WITH sales_products AS
 (SELECT
   s.customer_id, m.product_name, m.price
 FROM sales s JOIN menu m
-ON s.product_id=m.product_id), 
+ON s.product_id = m.product_id), 
 
 points_calculated AS
 (SELECT
@@ -214,6 +221,7 @@ GROUP BY customer_id;
 ```
 
 **Answer:**
+
 
 ![9ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/ec9059b1-bd4a-4838-994d-4e407e748631)
 
@@ -236,7 +244,7 @@ points_calculated AS
 *,
 CASE
 	WHEN order_date BETWEEN join_date AND first_week THEN price*20
-    WHEN product_name="sushi" THEN price*20
+    WHEN product_name = "sushi" THEN price*20
 	ELSE price*10
 END AS points
 FROM joined_tables_sales_jan)
@@ -250,6 +258,7 @@ ORDER BY customer_id;
 ```
 
 **Answer:**
+
 
 ![10ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/394a7268-042c-47a4-81ab-12c8481c7e39)
 
