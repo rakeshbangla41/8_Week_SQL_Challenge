@@ -26,7 +26,8 @@ SELECT
   s.customer_id, SUM(m.price) AS total_amount_spent 
 FROM sales s JOIN menu m 
   ON s.product_id=m.product_id 
-GROUP BY customer_id ORDER BY s.customer_id;
+GROUP BY customer_id
+ORDER BY s.customer_id;
 
 ```
 **Answer:**
@@ -39,7 +40,8 @@ GROUP BY customer_id ORDER BY s.customer_id;
 SELECT 
   customer_id, COUNT(DISTINCT(order_date)) AS no_of_days_visited 
 FROM sales 
-GROUP BY customer_id ORDER BY customer_id;
+GROUP BY customer_id
+ORDER BY customer_id;
 
 ```
 
