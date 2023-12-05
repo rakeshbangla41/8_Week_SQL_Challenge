@@ -13,5 +13,11 @@ Danny wants to use the data to answer a few simple questions about his customers
 
 He plans on using these insights to help him decide whether he should expand the existing customer loyalty program - additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL.  
 
+## Entity Relationship Diagram:
+
+![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/78db5379-df24-45bc-a736-6746166b156d)
+
+
+
 
 
