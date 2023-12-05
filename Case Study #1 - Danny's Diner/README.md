@@ -18,7 +18,7 @@ He plans on using these insights to help him decide whether he should expand the
 
 ## Questions and Solutions:
 
-1. What is the total amount each customer spent at the restaurant?
+### 1. What is the total amount each customer spent at the restaurant?
 
 
 
