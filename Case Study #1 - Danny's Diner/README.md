@@ -33,6 +33,38 @@ GROUP BY customer_id ORDER BY s.customer_id;
 
 ![1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/2869e429-edcb-4719-9c50-74be4be70454)
 
+**2. How many days has each customer visited the restaurant?**
+
+```
+SELECT 
+  customer_id, COUNT(DISTINCT(order_date)) AS no_of_days_visited 
+FROM sales 
+GROUP BY customer_id ORDER BY customer_id;
+
+```
+
+**Solution:**
+![2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1021d4c8-27fe-4682-8087-9bde5d372e79)
+
+
+**3. What was the first item from the menu purchased by each customer?**
+
+```
+WITH ordered_items AS
+(SELECT 
+  customer_id, product_name, order_date, RANK() OVER(PARTITION BY customer_id ORDER BY order_date) AS rnk 
+FROM sales s JOIN menu m 
+ON s.product_id=m.product_id)
+
+SELECT 
+  customer_id, order_date, product_name 
+FROM ordered_items 
+WHERE rnk=1;
+
+```
+
+
+
 
 
 
