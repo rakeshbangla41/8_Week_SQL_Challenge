@@ -29,6 +29,7 @@ FROM sales s JOIN menu m
 GROUP BY customer_id ORDER BY s.customer_id;
 
 ```
+**Solution:**
 
 ![1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/2869e429-edcb-4719-9c50-74be4be70454)
 
