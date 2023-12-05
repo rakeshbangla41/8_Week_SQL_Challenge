@@ -16,6 +16,12 @@ He plans on using these insights to help him decide whether he should expand the
 ## Entity Relationship Diagram:
 ![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/7852f956-986f-4bc3-839e-7a0953b12872)
 
+## Questions and Solutions:
+
+1. What is the total amount each customer spent at the restaurant?
+
+
+
 
 
 
