@@ -175,6 +175,12 @@ WHERE rnk = 1;
 
 ```
 
+**Answer:**
+
+
+![7ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/58ac23cf-c2da-4c25-af8d-e939a7622d01)
+
+
 **Q8. What is the total items and amount spent for each member before they became a member?**
 
 ```
