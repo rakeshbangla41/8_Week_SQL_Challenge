@@ -44,6 +44,7 @@ GROUP BY customer_id ORDER BY customer_id;
 ```
 
 **Solution:**
+
 ![2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1021d4c8-27fe-4682-8087-9bde5d372e79)
 
 
@@ -62,6 +63,26 @@ FROM ordered_items
 WHERE rnk=1;
 
 ```
+
+**Solution:**
+
+![3ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/ae013149-9b4a-4a09-a57c-f7dd2ba3c88d)
+
+
+**4. What is the most purchased item on the menu and how many times was it purchased by all customers?**
+
+```
+SELECT 
+  product_name, COUNT(*) AS no_of_times_ordered 
+FROM sales s JOIN menu m 
+ON s.product_id = m.product_id 
+GROUP BY product_name 
+ORDER BY no_of_times_ordered DESC LIMIT 1;
+
+```
+
+**Solution:**
+
 
 
 
