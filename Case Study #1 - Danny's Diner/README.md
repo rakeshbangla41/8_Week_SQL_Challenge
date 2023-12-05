@@ -20,14 +20,10 @@ He plans on using these insights to help him decide whether he should expand the
 
 **1. What is the total amount each customer spent at the restaurant?**
 
-```diff
-- text in red
-+ text in blue
-```
 
-```
-- SELECT 
-  + s.customer_id, SUM(m.price) AS total_amount_spent 
+```diff
+- text in red SELECT 
+  + text in blue s.customer_id, SUM(m.price) AS total_amount_spent 
 FROM sales s JOIN menu m 
   ON s.product_id=m.product_id 
 GROUP BY customer_id ORDER BY s.customer_id;
