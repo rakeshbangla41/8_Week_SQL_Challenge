@@ -270,6 +270,99 @@ ORDER BY customer_id;
 
 
 
+## Bonus Questions:
+
+**Join All The Things**
+
+The following questions are related creating basic data tables that Danny and his team can use to quickly derive insights without needing to join the underlying tables using SQL.
+
+Recreate the following table output using the available data:
+
+![bonus_q1_table_op](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/e911f7c0-e2d9-4d3f-a933-a85b419ee651)
+
+
+**Solution-1:**
+
+```
+SELECT 
+	s.customer_id, s.order_date, m.product_name, m.price, 
+CASE
+	WHEN order_date >= join_date THEN "Y"
+    ELSE "N"
+END AS is_member
+FROM sales s JOIN menu m 
+ON s.product_id = m.product_id 
+LEFT JOIN members mm 
+ON s.customer_id = mm.customer_id 
+ORDER BY s.customer_id, s.order_date;
+
+```
+
+**Solution-2:** 
+
+```
+WITH sales_products_members AS 
+(SELECT 
+	s.customer_id, s.order_date, m.product_name, m.price, mem.join_date 
+ FROM sales s JOIN menu m 
+ ON s.product_id = m.product_id 
+LEFT JOIN members mem 
+ON s.customer_id = mem.customer_id)
+
+SELECT 
+*, 
+CASE
+	WHEN order_date >= join_date THEN "Y"
+    ELSE "N"
+END AS is_member
+FROM sales_products_members;
+
+```
+
+**Answer:**
+
+
+![bonus_ans_1](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/a9ebfd3f-99f5-40fe-8fef-4b512c1ddef9)
+
+
+**Rank All The Things**
+
+Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
+
+![bonus_q2_table_op](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/fcb5be51-218d-443c-b05e-b744a7de9b6b)
+
+```
+WITH sales_products_members as 
+(SELECT 
+	s.customer_id, s.order_date, m.product_name, m.price, mem.join_date 
+FROM sales s JOIN menu m 
+ON s.product_id = m.product_id 
+LEFT JOIN members mem 
+ON s.customer_id = mem.customer_id),
+
+members AS 
+(SELECT 
+*, 
+CASE
+	WHEN join_date <= order_date THEN "Y"
+    ELSE "N"
+END AS is_member
+FROM sales_products_members)
+
+SELECT 
+*, 
+CASE
+	WHEN is_member = "Y" THEN RANK() OVER(PARTITION BY customer_id, is_member ORDER BY order_date)
+	ELSE "NULL"
+END AS ranking
+FROM members;
+
+```
+
+
+
+
+
 
 
 
