@@ -249,6 +249,11 @@ ORDER BY customer_id;
 
 ```
 
+**Answer:**
+
+![10ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/394a7268-042c-47a4-81ab-12c8481c7e39)
+
+
 
 
 
