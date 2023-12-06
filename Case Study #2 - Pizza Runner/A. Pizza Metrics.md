@@ -107,9 +107,15 @@ ORDER BY max_no_of_pizzas_delivered DESC LIMIT 1;
 
 ```
 
+**Answer:**
+
+
+![a6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/251b894c-79bb-4282-9197-8912f278e6ac)
+
+
 **Q7. For each customer, how many delivered pizzas had at least 1 change and how many had no changes?**
 
-**no changes - **
+**no changes -**
 
 ```
 SELECT 
@@ -127,7 +133,7 @@ GROUP BY customer_id;
 
 ![a7aans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/8cc78794-4908-4468-b198-5031f5754383)
 
-**at least 1 change - **
+**at least 1 change -**
 
 ```
 SELECT 
