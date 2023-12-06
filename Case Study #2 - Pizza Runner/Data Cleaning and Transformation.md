@@ -3,7 +3,7 @@
 ## Data Cleaning and Transformation:   
 
 
-**Table 'customer_orders' before data cleaning and transformation:**  
+**1) Table 'customer_orders' before data cleaning and transformation:**  
 
 
 ![table2_customer_orders_before_data_cleaning](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/26834858-c3a0-4b79-82ac-530c5558f563)  
@@ -45,7 +45,7 @@ FROM customer_orders;
 
 
 
-**Table 'runner_orders' before data cleaning and transformation:**  
+**2) Table 'runner_orders' before data cleaning and transformation:**  
 
 
 ![table3_runner_orders_before_data_cleaning](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/2df838f4-7a73-4ef5-9fc4-0c7f61251c02)  
