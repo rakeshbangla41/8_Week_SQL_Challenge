@@ -98,6 +98,7 @@ ORDER BY no_of_times_used DESC;
 
 **Solution - 2:**
 
+```
 WITH table_joins_with_no_cancellations AS
 (SELECT 
   cot.order_id, cot.pizza_id, pr.toppings, pt.topping_name, cot.exclusions, cot.extras
@@ -124,8 +125,12 @@ FROM topping_count
 GROUP BY topping_name 
 ORDER BY total_no_of_times_used DESC;
 
+```
 
-**Answer:**![c6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/8159b3e4-c783-49c4-a440-d67d8c0365b2)
+**Answer:**
+
+
+![c6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/8159b3e4-c783-49c4-a440-d67d8c0365b2)
 
 
 
