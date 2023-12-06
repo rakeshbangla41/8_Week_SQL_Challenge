@@ -6,7 +6,7 @@
 
 ##### Note: I have taken the screenshot of each answer in MySQL Workbench and attached the same here under Answer section.
 
-Q1. If a Meat Lovers pizza costs $12 and Vegetarian costs $10 and there were no charges for changes - how much money has Pizza Runner made so far if there are no delivery fees?
+**Q1. If a Meat Lovers pizza costs $12 and Vegetarian costs $10 and there were no charges for changes - how much money has Pizza Runner made so far if there are no delivery fees?**
 
 ```
 WITH calculated_amount as
