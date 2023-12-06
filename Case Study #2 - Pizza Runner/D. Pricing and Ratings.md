@@ -13,7 +13,7 @@ WITH calculated_amount as
 (SELECT
   cot.order_id, 
 CASE
-	WHEN pizza_id = 1 THEN 12 ELSE 10 
+     WHEN pizza_id = 1 THEN 12 ELSE 10 
 END AS price
 FROM customer_orders_temp cot  
 JOIN runner_orders_temp rot
@@ -38,15 +38,12 @@ FROM calculated_amount;
 WITH calculated_amount AS
 (SELECT
   cot.order_id,
-
 CASE
-	WHEN pizza_id = 1 THEN 12 ELSE 10 
+     WHEN pizza_id = 1 THEN 12 ELSE 10 
 END AS price,
-
 CASE
-	WHEN EXTRAS IS NULL THEN 0 ELSE 1
+     WHEN EXTRAS IS NULL THEN 0 ELSE 1
 END AS extras_price
-
 FROM customer_orders_temp cot  
 JOIN runner_orders_temp rot
 ON cot.order_id = rot.order_id
@@ -77,7 +74,7 @@ generate a schema for this new table and insert your own data for ratings for ea
 DROP TABLE IF EXISTS customer_rating;
 
 CREATE TABLE customer_rating (
-			      order_id INTEGER,
+            order_id INTEGER,
             customer_id INTEGER,
             runner_id INTEGER,
             rating INTEGER,
@@ -108,10 +105,10 @@ SELECT * FROM customer_rating;
 ```
 SELECT 
   DISTINCT(cr.order_id), cr.customer_id, cr.runner_id, order_time, pickup_time, TIMESTAMPDIFF(MINUTE, order_time, pickup_time) AS time_difference_min, duration, 
-ROUND(distance/(duration/60), 1) AS speed_kmperhr, rating, comments 
+  ROUND(distance/(duration/60), 1) AS speed_kmperhr, rating, comments 
 FROM customer_rating cr 
 JOIN customer_orders_temp cot 
-ON cr.order_id=cot.order_id 
+ON cr.order_id = cot.order_id 
 JOIN runner_orders_temp rot 
 ON cr.order_id = rot.order_id;
 
@@ -141,7 +138,7 @@ WHERE rot.cancellation IS NULL)
 
 SELECT
   SUM(price) AS total_amount_earned, ROUND(SUM(distance_amount_paid_for_runner), 2) AS total_amount_paid_for_runners,  
-  SUM(price)-ROUND(SUM(distance_amount_paid_for_runner), 2) AS money_left_with_pizza_runner
+  SUM(price) - ROUND(SUM(distance_amount_paid_for_runner), 2) AS money_left_with_pizza_runner
 FROM calculated_amount_w_distance;
 
 ```
