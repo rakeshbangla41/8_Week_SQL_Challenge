@@ -12,7 +12,7 @@
 * Both the columns **'exclusions'** and **'extras'** have missing and null values.
 
 * In this particular scenario, it is better to replace both missing and null values with **'NULL'**. This will have no impact on the output.
-* 
+
 
 **Table 'customer_orders' after data cleaning and transformation:**  
 
@@ -31,7 +31,7 @@
 * In **'distance**' column, remove **'km'** and replace with blank space **''**, remove **'null'** and replace with **'NULL'**.
 * In **'duration'** column, remove **'minutes'** and replace with blank space **''**, remove **'null'** and replace with **'NULL'**.
 * In **'cancellation'** column, remove **'NaN'** and empty spaces and replace with **'NULL'**.
-* 
+ 
 
 **Table 'runner_orders' after data cleaning and transformation:**  
 
