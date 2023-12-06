@@ -83,11 +83,9 @@ ORDER BY calendar_year, month_number, platform)
 SELECT 
 calendar_year, month_number,
 ROUND(100*MAX(CASE
-	           WHEN platform="Retail" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2)
-AS retail_sales_percentage,
+	           WHEN platform="Retail" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2) AS retail_sales_percentage,
 ROUND(100*MAX(CASE
-	           WHEN platform="Shopify" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2)
-AS shopify_sales_percentage
+	           WHEN platform="Shopify" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2) AS shopify_sales_percentage
 FROM monthly_sales
 GROUP BY calendar_year, month_number;
 
