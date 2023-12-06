@@ -194,6 +194,7 @@ ORDER BY no_of_pizzas_ordered DESC;
 
 **Q10. What was the volume of orders for each day of the week?**
 
+```
 WITH day_name AS
 (SELECT 
   *, DAYNAME(order_time) AS day_of_week 
@@ -204,6 +205,8 @@ SELECT
 FROM day_name 
 GROUP BY day_of_week 
 ORDER BY no_of_pizzas_ordered DESC;
+
+```
 
 **Answer:**
 
