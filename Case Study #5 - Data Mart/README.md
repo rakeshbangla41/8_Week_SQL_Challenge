@@ -12,11 +12,11 @@ In June 2020 - large scale supply changes were made at Data Mart. All Data Mart 
 Danny needs your help to quantify the impact of this change on the sales performance for Data Mart and it’s separate business areas.
 The key business question he wants you to help him answer are the following:  
 
-•	What was the quantifiable impact of the changes introduced in June 2020?
-•	Which platform, region, segment and customer types were the most impacted by this change?
-•	What can we do about future introduction of similar sustainability updates to the business to minimise impact on sales?
+•	What was the quantifiable impact of the changes introduced in June 2020?   
+•	Which platform, region, segment and customer types were the most impacted by this change?   
+•	What can we do about future introduction of similar sustainability updates to the business to minimise impact on sales?   
 
-## Entity Relationship Diagram:
+## Available Data/Entity Relationship Diagram:
 
 ![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/28bf8cca-f917-4dde-a17b-70430e75c861)
 
