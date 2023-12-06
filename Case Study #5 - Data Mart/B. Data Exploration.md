@@ -83,10 +83,10 @@ ORDER BY calendar_year, month_number, platform)
 SELECT 
 calendar_year, month_number,
 ROUND(100*MAX(CASE
-	WHEN platform="Retail" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2)
+	           WHEN platform="Retail" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2)
 AS retail_sales_percentage,
 ROUND(100*MAX(CASE
-	WHEN platform="Shopify" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2)
+	           WHEN platform="Shopify" THEN monthly_sales ELSE NULL END)/SUM(monthly_sales), 2)
 AS shopify_sales_percentage
 FROM monthly_sales
 GROUP BY calendar_year, month_number;
@@ -143,6 +143,11 @@ SELECT
   ORDER BY retail_sales_contribution_pct DESC;
 
 ```
+
+**Answer:**
+
+
+![b7ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/96037b90-38b3-43ff-a779-6ae63d884333)
 
 
 
