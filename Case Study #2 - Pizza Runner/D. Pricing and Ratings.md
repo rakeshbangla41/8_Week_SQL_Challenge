@@ -104,8 +104,9 @@ SELECT * FROM customer_rating;
 
 ```
 SELECT 
-  DISTINCT(cr.order_id), cr.customer_id, cr.runner_id, order_time, pickup_time, TIMESTAMPDIFF(MINUTE, order_time, pickup_time) AS time_difference_min, duration, 
-  ROUND(distance/(duration/60), 1) AS speed_kmperhr, rating, comments 
+  DISTINCT(cr.order_id), cr.customer_id, cr.runner_id, order_time, pickup_time, 
+  TIMESTAMPDIFF(MINUTE, order_time, pickup_time) AS time_difference_min, duration, ROUND(distance/(duration/60), 1) AS speed_kmperhr,
+  rating, comments 
 FROM customer_rating cr 
 JOIN customer_orders_temp cot 
 ON cr.order_id = cot.order_id 
@@ -128,7 +129,7 @@ WITH calculated_amount_w_distance AS
 (SELECT
   cot.order_id, cot.pizza_id, cot.exclusions, cot.extras, 
 CASE
-	WHEN pizza_id = 1 THEN 12 ELSE 10 
+     WHEN pizza_id = 1 THEN 12 ELSE 10 
 END AS price,
 rot.runner_id, rot.distance, ROUND((0.30*rot.distance), 2) AS distance_amount_paid_for_runner
 FROM customer_orders_temp cot 
