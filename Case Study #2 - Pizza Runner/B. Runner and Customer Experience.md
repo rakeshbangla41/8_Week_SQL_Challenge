@@ -138,6 +138,7 @@ FROM orders_assigned_delivered;
 ```
 
 
+![b7ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/8fae0d4f-1318-4290-b912-1c659b2c023f)
 
 
 
