@@ -139,8 +139,8 @@ ORDER BY total_retail_sales DESC)
 SELECT 
   age_band, demographic, total_retail_sales, 
   ROUND(100*(total_retail_sales/SUM(total_retail_sales) OVER()), 2) AS retail_sales_contribution_pct 
-  FROM retail_sales 
-  ORDER BY retail_sales_contribution_pct DESC;
+FROM retail_sales 
+ORDER BY retail_sales_contribution_pct DESC;
 
 ```
 
