@@ -39,8 +39,7 @@
 ![table3_runner_orders_after_data_cleaning](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/cf4c43e7-9860-47ab-b129-5557abc23385)   
 
 
-
-
+### All the other tables are good to go for analysis and does not need any data cleaning and transformation. So, I'm keeping them as it is.
 
 
 
