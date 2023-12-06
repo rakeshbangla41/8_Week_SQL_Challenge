@@ -18,7 +18,7 @@ He plans on using these insights to help him decide whether he should expand the
 
 ## Questions and Solutions:
 
-### Note: I have taken the screenshot of each answer in MySQL Workbench and attached the same here under Answer section.
+##### Note: I have taken the screenshot of each answer in MySQL Workbench and attached the same here under Answer section.
 
 **Q1. What is the total amount each customer spent at the restaurant?**
 
