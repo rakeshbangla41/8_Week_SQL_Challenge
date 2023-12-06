@@ -13,6 +13,30 @@
 
 * In this particular scenario, it is better to replace both missing and null values with **'NULL'**. This will have no impact on the output.
 
+**We will create a temporary table called 'customer_orders_temp' and will use this table from now on for analysis.**
+
+```
+DROP TABLE IF EXISTS customer_orders_temp;
+
+CREATE TEMPORARY TABLE customer_orders_temp AS
+SELECT
+       order_id,
+       customer_id,
+       pizza_id,
+       CASE
+           WHEN exclusions = '' THEN NULL
+           WHEN exclusions = 'null' THEN NULL
+           ELSE exclusions
+       END AS exclusions,
+       CASE
+           WHEN extras = '' THEN NULL
+           WHEN extras = 'null' THEN NULL
+           ELSE extras
+       END AS extras,
+       order_time
+FROM customer_orders;
+
+```
 
 **Table 'customer_orders' after data cleaning and transformation:**  
 
@@ -32,6 +56,35 @@
 * In **'duration'** column, remove **'minutes'** and replace with blank space **''**, remove **'null'** and replace with **'NULL'**.
 * In **'cancellation'** column, remove **'NaN'** and empty spaces and replace with **'NULL'**.
  
+**We will create a temporary table called 'runner_orders_temp' and will use this table from now on for analysis.**
+
+```
+DROP TABLE IF EXISTS runner_orders_temp;
+
+CREATE TEMPORARY TABLE runner_orders_temp AS
+SELECT
+       order_id,
+       runner_id,
+       CASE
+           WHEN pickup_time LIKE 'null' THEN NULL
+           ELSE pickup_time
+       END AS pickup_time,
+       CASE
+           WHEN distance LIKE 'null' THEN NULL
+           ELSE CAST(regexp_replace(distance, '[a-z]+', '') AS FLOAT)
+       END AS distance,
+       CASE
+           WHEN duration LIKE 'null' THEN NULL
+           ELSE CAST(regexp_replace(duration, '[a-z]+', '') AS FLOAT)
+       END AS duration,
+       CASE
+           WHEN cancellation LIKE '' THEN NULL
+           WHEN cancellation LIKE 'null' THEN NULL
+           ELSE cancellation
+       END AS cancellation
+FROM runner_orders;
+
+```
 
 **Table 'runner_orders' after data cleaning and transformation:**  
 
