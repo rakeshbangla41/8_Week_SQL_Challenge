@@ -22,7 +22,7 @@ freelance developers to build a mobile app to accept orders from customers.
 
 ## Solutions:
 
-Please click on the links below to access solutions for each section.
+**Please click on the links below to access solutions for each section.**
 
 
 * [0. Data Cleaning and Transformation](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/0.%20Data%20Cleaning%20and%20Transformation.md)   
