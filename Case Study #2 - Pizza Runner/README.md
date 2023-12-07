@@ -20,5 +20,26 @@ freelance developers to build a mobile app to accept orders from customers.
 ![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/e83627bf-bb58-4631-a4a7-8265edc150ad)
 
 
+Please click on the links below to access solutions for each section.
+
+
+[0. Data Cleaning and Transformation](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/0.%20Data%20Cleaning%20and%20Transformation.md)   
+
+[A. Pizza Metrics](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/A.%20Pizza%20Metrics.md)   
+
+[B. Runner and Customer Experience](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/B.%20Runner%20and%20Customer%20Experience.md)   
+
+[C. Ingredient Optimisation](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/C.%20Ingredient%20Optimisation.md)   
+
+[D. Pricing and Ratings](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/D.%20Pricing%20and%20Ratings.md)  
+
+
+
+
+
+
+
+
+
 
 
