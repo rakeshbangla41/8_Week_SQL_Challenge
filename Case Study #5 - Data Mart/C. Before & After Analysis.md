@@ -47,10 +47,10 @@ FROM total_sales_before_after;
 WITH sales_per_week_before_after AS
 (SELECT 
     SUM(CASE 
-		    WHEN (week_number BETWEEN 12 AND 23) AND (calendar_year="2020") THEN sales 
+            WHEN (week_number BETWEEN 12 AND 23) AND (calendar_year="2020") THEN sales 
 	END) AS sales_per_week_before,
     SUM(CASE
-		    WHEN (week_number BETWEEN 24 AND 35) AND (calendar_year="2020") THEN sales 
+            WHEN (week_number BETWEEN 24 AND 35) AND (calendar_year="2020") THEN sales 
 	END) AS sales_per_week_after
 FROM clean_weekly_sales
 GROUP BY calendar_year, week_number, week_date 
@@ -73,9 +73,69 @@ FROM total_sales_before_after;
 ![c2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/349542a0-8c0c-4e7c-8daa-e2e0105d17a2)
 
 
+**Q3. How do the sale metrics for these 2 periods before and after compare with the previous years in 2018 and 2019?**
 
 
+**4 week:**
 
+```
+
+WITH sales_per_week_before_after AS
+(SELECT calendar_year,
+	SUM(CASE 
+		WHEN (week_number BETWEEN 20 AND 23) THEN sales 
+	END) AS sales_per_week_before,
+	SUM(CASE
+		WHEN (week_number BETWEEN 24 AND 27) THEN sales 
+	END) AS sales_per_week_after
+FROM clean_weekly_sales
+GROUP BY calendar_year, week_number 
+ORDER BY week_number),
+
+total_sales_before_after AS
+(SELECT 
+  calendar_year, SUM(sales_per_week_before) AS before_change_sales, SUM(sales_per_week_after) AS after_change_sales  
+FROM sales_per_week_before_after 
+GROUP BY calendar_year 
+ORDER BY calendar_year)
+
+SELECT 
+  calendar_year, before_change_sales, after_change_sales, (after_change_sales - before_change_sales) AS difference, 
+  (100*(after_change_sales - before_change_sales)/before_change_sales) AS pct_variance 
+FROM total_sales_before_after;
+
+```
+
+
+**# 12 week:**
+
+```
+
+WITH sales_per_week_before_after AS
+(SELECT calendar_year,
+	SUM(CASE 
+	        WHEN (week_number BETWEEN 12 AND 23) THEN sales 
+	END) AS sales_per_week_before,
+	SUM(CASE
+                WHEN (week_number BETWEEN 24 AND 35) THEN sales 
+	END) AS sales_per_week_after
+FROM clean_weekly_sales
+GROUP BY calendar_year, week_number 
+ORDER BY week_number),
+
+total_sales_before_after AS
+(SELECT 
+  calendar_year, SUM(sales_per_week_before) AS before_change_sales, SUM(sales_per_week_after) AS after_change_sales 
+FROM sales_per_week_before_after 
+GROUP BY calendar_year 
+ORDER BY calendar_year)
+
+SELECT 
+  calendar_year, before_change_sales, after_change_sales, (after_change_sales - before_change_sales) AS difference, 
+  (100*(after_change_sales - before_change_sales)/before_change_sales) AS pct_variance 
+FROM total_sales_before_after;
+
+```
 
 
 
