@@ -6,7 +6,7 @@
 
 
 
-**In a single query, perform the following operations and generate a new table in the data_mart schema named clean_weekly_sales:**  
+**Q. In a single query, perform the following operations and generate a new table in the data_mart schema named clean_weekly_sales:**  
 
 •	Convert the week_date to a DATE format  
 
