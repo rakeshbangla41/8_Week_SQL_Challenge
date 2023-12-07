@@ -44,6 +44,7 @@
 
 **Data Cleaning & Transformation Code:**
 
+```
 
 DROP TABLE IF EXISTS weekly_sales_new;
 
@@ -79,7 +80,7 @@ sales AS sales,
 ROUND(sales/transactions, 2) AS avg_sales
 FROM weekly_sales_new;
 
-
+```
 
 
 
