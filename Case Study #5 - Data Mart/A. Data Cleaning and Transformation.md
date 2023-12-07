@@ -2,9 +2,11 @@
 
 ## A. Data Cleaning and Transformation:  
 
-All the information presented here is taken from: [Data Mart](https://8weeksqlchallenge.com/case-study-5/)
+##### All the information presented here is taken from: [Data Mart](https://8weeksqlchallenge.com/case-study-5/)   
 
-In a single query, perform the following operations and generate a new table in the data_mart schema named clean_weekly_sales:  
+
+
+**In a single query, perform the following operations and generate a new table in the data_mart schema named clean_weekly_sales:**  
 
 •	Convert the week_date to a DATE format  
 
