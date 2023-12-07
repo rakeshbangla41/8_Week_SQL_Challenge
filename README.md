@@ -9,6 +9,8 @@ I would like to thank Mr. Danny Ma - [Data with Danny](https://www.linkedin.com/
 
 ## Case Studies:
 
+**Please click on the links below to access solutions for each case study.**
+
 * [Case Study #1 - Danny's Diner](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner)  
 
 * [Case Study #2 - Pizza Runner](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/tree/main/Case%20Study%20%232%20-%20Pizza%20Runner)   
