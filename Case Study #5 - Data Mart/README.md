@@ -24,4 +24,19 @@ The key business question he wants you to help him answer are the following:
 ![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/28bf8cca-f917-4dde-a17b-70430e75c861)
 
 
+## Solutions:
+
+Please click on the links below to access solutions for each section.
+
+
+[A. Data Cleaning and Transformation](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%235%20-%20Data%20Mart/A.%20Data%20Cleaning%20and%20Transformation.md)   
+
+[B. Data Exploration](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%235%20-%20Data%20Mart/B.%20Data%20Exploration.md)   
+
+[C. Before & After Analysis](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%235%20-%20Data%20Mart/C.%20Before%20%26%20After%20Analysis.md)  
+
+[D. Bonus Question](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%235%20-%20Data%20Mart/D.%20Bonus%20Question.md)    
+
+
+
 
