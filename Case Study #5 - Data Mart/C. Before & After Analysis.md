@@ -37,7 +37,7 @@ FROM total_sales_before_after;
 **Answer:**
 
 
-![b1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1f69f727-4765-4963-9899-3736bd81a099)
+![c1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/ebc07984-b9be-4e02-a5bf-b47833cce4cd)
 
 
 **Q2. What about the entire 12 weeks before and after?**
@@ -70,7 +70,8 @@ FROM total_sales_before_after;
 
 **Answer:**
 
-![b2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/763442d5-5b26-4a0d-b76f-f865ba9574b0)
+![c2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/349542a0-8c0c-4e7c-8daa-e2e0105d17a2)
+
 
 
 
