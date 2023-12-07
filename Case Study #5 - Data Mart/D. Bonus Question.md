@@ -24,10 +24,10 @@ WITH sales_before_after AS
 (SELECT 
   region,
   SUM(CASE 
-		      WHEN (week_number BETWEEN 12 AND 23) AND (calendar_year="2020") THEN sales 
+          WHEN (week_number BETWEEN 12 AND 23) AND (calendar_year="2020") THEN sales 
 	END) AS before_change_sales,
   SUM(CASE
-		      WHEN (week_number BETWEEN 24 AND 35) AND (calendar_year="2020") THEN sales 
+          WHEN (week_number BETWEEN 24 AND 35) AND (calendar_year="2020") THEN sales 
 	END) AS after_change_sales
 FROM clean_weekly_sales
 GROUP BY region 
