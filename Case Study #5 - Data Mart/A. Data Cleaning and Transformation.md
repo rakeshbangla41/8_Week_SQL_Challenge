@@ -42,5 +42,57 @@
 • Generate a new avg_transaction column as the sales value divided by transactions rounded to 2 decimal places for each record
 
 
+**Data Cleaning & Transformation Code:**
+
+
+DROP TABLE IF EXISTS weekly_sales_new;
+
+CREATE TABLE weekly_sales_new AS
+
+SELECT 
+  str_to_date(week_date, "%d/%m/%y") AS week_date_new, region AS region, platform AS platform, 
+segment AS segment, customer_type AS customer_type, transactions AS transactions, sales AS sales 
+FROM weekly_sales; 
+
+
+DROP TABLE IF EXISTS clean_weekly_sales;
+
+CREATE TABLE clean_weekly_sales AS
+
+SELECT 
+  week_date_new AS week_date, WEEK(week_date_new) AS week_number, MONTH(week_date_new) AS month_number, 
+YEAR(week_date_new) AS calendar_year, region AS region, platform AS platform, segment AS segment, customer_type AS customer_type, 
+CASE
+	WHEN segment LIKE "%1" THEN "Young Adults"
+    WHEN segment LIKE "%2" THEN "Middle Aged"
+    WHEN segment LIKE "%3" THEN "Retirees"
+    WHEN segment LIKE "%4" THEN "Retirees"
+	ELSE "unknown"
+END AS age_band,
+CASE
+	WHEN segment LIKE "C%" THEN "Couples"
+    WHEN segment LIKE "F%" THEN "Families"
+    ELSE "unknown"
+END AS demographic,
+transactions AS transactions,
+sales AS sales, 
+ROUND(sales/transactions, 2) AS avg_sales
+FROM weekly_sales_new;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
