@@ -52,7 +52,7 @@ CREATE TABLE weekly_sales_new AS
 
 SELECT 
   str_to_date(week_date, "%d/%m/%y") AS week_date_new, region AS region, platform AS platform, 
-segment AS segment, customer_type AS customer_type, transactions AS transactions, sales AS sales 
+  segment AS segment, customer_type AS customer_type, transactions AS transactions, sales AS sales 
 FROM weekly_sales; 
 
 
@@ -62,16 +62,16 @@ CREATE TABLE clean_weekly_sales AS
 
 SELECT 
   week_date_new AS week_date, WEEK(week_date_new) AS week_number, MONTH(week_date_new) AS month_number, 
-YEAR(week_date_new) AS calendar_year, region AS region, platform AS platform, segment AS segment, customer_type AS customer_type, 
+  YEAR(week_date_new) AS calendar_year, region AS region, platform AS platform, segment AS segment, customer_type AS customer_type, 
 CASE
-	WHEN segment LIKE "%1" THEN "Young Adults"
+    WHEN segment LIKE "%1" THEN "Young Adults"
     WHEN segment LIKE "%2" THEN "Middle Aged"
     WHEN segment LIKE "%3" THEN "Retirees"
     WHEN segment LIKE "%4" THEN "Retirees"
-	ELSE "unknown"
+    ELSE "unknown"
 END AS age_band,
 CASE
-	WHEN segment LIKE "C%" THEN "Couples"
+    WHEN segment LIKE "C%" THEN "Couples"
     WHEN segment LIKE "F%" THEN "Families"
     ELSE "unknown"
 END AS demographic,
