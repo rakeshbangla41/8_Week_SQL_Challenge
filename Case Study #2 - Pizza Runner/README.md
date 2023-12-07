@@ -20,6 +20,8 @@ freelance developers to build a mobile app to accept orders from customers.
 ![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/e83627bf-bb58-4631-a4a7-8265edc150ad)
 
 
+## Solutions:
+
 Please click on the links below to access solutions for each section.
 
 
