@@ -82,6 +82,16 @@ FROM weekly_sales_new;
 
 ```
 
+```
+SELECT * FROM clean_weekly_sales;
+
+```
+
+**Answer:**
+
+
+![data_cleaning_output](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/c83d7dcf-65f7-4011-9b52-004a58be007b)
+
 
 
 
