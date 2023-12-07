@@ -96,7 +96,7 @@ ORDER BY no_of_times_ordered DESC LIMIT 1;
 
 
 * Ramen is the most purchased item on the menu and it was purchased 8 times.
-* 
+ 
 
 **Q5. Which item was the most popular for each customer?**
 
