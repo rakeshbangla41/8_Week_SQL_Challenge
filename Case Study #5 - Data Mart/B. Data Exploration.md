@@ -1,6 +1,6 @@
 # Case Study #5 - Data Mart
 
-## A. Data Exploration
+## B. Data Exploration
 
 ## Questions and Solutions:
 
