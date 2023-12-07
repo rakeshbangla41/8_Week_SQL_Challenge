@@ -106,6 +106,10 @@ FROM total_sales_before_after;
 
 ```
 
+**Answer:**
+
+![c3ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1e0d699e-ae18-4819-9000-7cb5835c6a43)
+
 
 **# 12 week:**
 
@@ -136,6 +140,11 @@ SELECT
 FROM total_sales_before_after;
 
 ```
+
+**Answer:**
+
+![c4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1582e5c3-cac2-4655-a3c6-3f5b603b4489)
+
 
 
 
