@@ -94,6 +94,8 @@ ORDER BY no_of_times_ordered DESC LIMIT 1;
 
 ![4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/126b9823-56fc-4608-ae7b-11ffd7635f2f)
 
+* Ramen is the most purchased item on the menu and it was purchased 8 times.
+
 **Q5. Which item was the most popular for each customer?**
 
 ```
@@ -115,6 +117,10 @@ FROM product_times_ranked
 WHERE rnk = 1;
 
 ```
+
+* Ramen was the most favourite item for customer A.
+* Customer B ordered curry, sushi, and ramen equal number of times - 2.
+* Customer C's most favourite item was Ramen.
 
 **Answer:**
 
@@ -152,6 +158,7 @@ WHERE rnk = 1;
 
 ![6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/dcf5ddd1-bd73-429a-9210-714df2f3c4df)
 
+* Customer A first purchased Ramen after becoming a member while Customer B first purchased Sushi.
 
 **Q7. Which item was purchased just before the customer became a member?**
 
@@ -179,6 +186,8 @@ WHERE rnk = 1;
 ```
 
 **Answer:**
+
+* Customer A first purchased both Sushi and Curry before becoming a member while Customer B first purchased Curry.
 
 
 ![7ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/58ac23cf-c2da-4c25-af8d-e939a7622d01)
