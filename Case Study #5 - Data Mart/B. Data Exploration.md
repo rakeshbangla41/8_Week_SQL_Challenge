@@ -152,7 +152,7 @@ ORDER BY retail_sales_contribution_pct DESC;
 
 ```
 SELECT 
-	calendar_year, platform, ROUND(SUM(sales)/SUM(transactions), 0) AS transaction_size 
+  calendar_year, platform, ROUND(SUM(sales)/SUM(transactions), 0) AS transaction_size 
 FROM clean_weekly_sales 
 GROUP BY calendar_year, platform 
 ORDER BY calendar_year;
