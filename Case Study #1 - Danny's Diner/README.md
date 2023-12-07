@@ -92,9 +92,11 @@ ORDER BY no_of_times_ordered DESC LIMIT 1;
 **Answer:**
 
 
-![4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/126b9823-56fc-4608-ae7b-11ffd7635f2f)
+![4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/126b9823-56fc-4608-ae7b-11ffd7635f2f) 
+
 
 * Ramen is the most purchased item on the menu and it was purchased 8 times.
+* 
 
 **Q5. Which item was the most popular for each customer?**
 
@@ -118,14 +120,16 @@ WHERE rnk = 1;
 
 ```
 
-* Ramen was the most favourite item for customer A.
-* Customer B ordered curry, sushi, and ramen equal number of times - 2.
-* Customer C's most favourite item was Ramen.
 
 **Answer:**
 
 
-![5ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/e82d694f-88b4-4782-bed2-a2c09bf52c8f)
+![5ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/e82d694f-88b4-4782-bed2-a2c09bf52c8f)  
+
+
+* Ramen was the most favourite item for customer A.
+* Customer B ordered curry, sushi, and ramen equal number of times - 2.
+* Customer C's most favourite item was Ramen.
 
 
 **Q6. Which item was purchased first by the customer after they became a member?**
@@ -156,9 +160,11 @@ WHERE rnk = 1;
 **Answer:**
 
 
-![6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/dcf5ddd1-bd73-429a-9210-714df2f3c4df)
+![6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/dcf5ddd1-bd73-429a-9210-714df2f3c4df)  
+
 
 * Customer A first purchased Ramen after becoming a member while Customer B first purchased Sushi.
+  
 
 **Q7. Which item was purchased just before the customer became a member?**
 
@@ -187,10 +193,11 @@ WHERE rnk = 1;
 
 **Answer:**
 
+
+![7ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/58ac23cf-c2da-4c25-af8d-e939a7622d01)  
+
+
 * Customer A first purchased both Sushi and Curry before becoming a member while Customer B first purchased Curry.
-
-
-![7ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/58ac23cf-c2da-4c25-af8d-e939a7622d01)
 
 
 **Q8. What is the total items and amount spent for each member before they became a member?**
