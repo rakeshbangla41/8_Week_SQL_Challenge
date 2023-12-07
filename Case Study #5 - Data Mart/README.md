@@ -26,7 +26,7 @@ The key business question he wants you to help him answer are the following:
 
 ## Solutions:
 
-Please click on the links below to access solutions for each section.
+**Please click on the links below to access solutions for each section.**
 
 
 [A. Data Cleaning and Transformation](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/blob/main/Case%20Study%20%235%20-%20Data%20Mart/A.%20Data%20Cleaning%20and%20Transformation.md)   
