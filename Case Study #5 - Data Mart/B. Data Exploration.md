@@ -48,6 +48,8 @@ ORDER BY region, month_number;
 
 ```
 
+* I have displayed only limited results here
+  
 **Answer:**
 
 
@@ -90,6 +92,7 @@ FROM monthly_sales
 GROUP BY calendar_year, month_number;
 
 ```
+* I have displayed only limited results here
 
 **Answer:**
 
@@ -141,6 +144,10 @@ FROM retail_sales
 ORDER BY retail_sales_contribution_pct DESC;
 
 ```
+* 'unknown' age_band and demographic contribute the highest retail sales with 40.5%
+* Retirees - Families and Couples come at second and third position respectively with 16.73% and 16.07%
+* Young Adults - Families contribute the least with 4.47%
+
 
 **Answer:**
 
@@ -158,6 +165,9 @@ GROUP BY calendar_year, platform
 ORDER BY calendar_year;
 
 ```
+
+* We can use the 'avg_transaction' column to calculate the 'average transaction size'
+* Average Transaction Size can be calculated by - total sales for the entire dataset/total number of transactions for the entire dataset
 
 **Answer:**
 
