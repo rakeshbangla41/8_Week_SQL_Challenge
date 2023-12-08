@@ -80,7 +80,7 @@ ORDER BY no_of_pizzas_ordered;
 * To make 3 pizzas, it takes 29 minutes which means 9.6 minutes for each pizza
 * To prepare 5 pizzas, it takes an average of 15 minutes which means 3 minutes to make each pizza
 
-  From this data, we can say that more the number of pizzas to prepare in an order, lesser the time it will take
+  **From this data, we can say that more the number of pizzas to prepare in an order, lesser the time it will take**
 
 **Q4. What was the average distance travelled for each customer?**
 
@@ -131,7 +131,7 @@ WHERE cancellation IS NULL;
 ![b6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/13c5fb87-4c83-48fd-b632-74df30b5a089)
 
 * Runner 1's average speed ranges from 37.5 KM/hr to 60 KM/hr
-* Runner 2's average speed ranges from 35.1 KM/hr to 93.6 KM/hr. The difference of speed between lowest and highest is almost 3 times. We can further investigate to know the eaxct reason how and why the 93.6 KM/hr order was delivered so fast
+* Runner 2's average speed ranges from 35.1 KM/hr to 93.6 KM/hr. The difference of speed between lowest and highest is almost 3 times. We can further investigate to know the exact reason how and why the 93.6 KM/hr order was delivered so fast
 * Runner 3's average speed was 40 KM/hr
 
 **Q7. What is the successful delivery percentage for each runner?**
