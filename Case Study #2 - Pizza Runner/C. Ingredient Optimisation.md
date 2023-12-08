@@ -49,6 +49,7 @@ ORDER BY no_of_times_added DESC LIMIT 1;
 
 ![c2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/a306d19e-a30b-4a55-a638-1f96e310534f)
 
+* Bacon was the most commonly ordered extra
 
 **Q3. What was the most common exclusion?**
 
@@ -69,6 +70,7 @@ ORDER BY no_of_times_excluded DESC LIMIT 1;
 
 ![c3ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/4fe9165b-0870-4cac-8a05-208a4919494c)
 
+* Cheese was the most common exclusion
 
 **Q4. What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first?**
 
@@ -132,7 +134,7 @@ ORDER BY total_no_of_times_used DESC;
 
 ![c6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/8159b3e4-c783-49c4-a440-d67d8c0365b2)
 
-
+* Cheese and Mushrooms were the most frequently used ingredient's with 15 times while Tomato Sauce, Tomatoes, Peppers, and Onions were the least frequently used items with 3 times
 
 
 
