@@ -21,6 +21,8 @@ GROUP BY WEEK(registration_date, 1);
 
 ![b1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/5d51d291-9da3-4381-bb4e-cf90dc651830)
 
+* In the first week of Jan, 2 new runners signed up
+* In the second and third week of Jan, 1 new runner signed up
 
 **Q2. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?**
 
@@ -73,6 +75,12 @@ ORDER BY no_of_pizzas_ordered;
 
 ![b3ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/d17b2c47-996c-423f-83b1-8a7b45ecb923)
 
+* On an average, it takes 12 minutes to prepare a single pizza
+* For preparing two pizzas, it takes 21 minutes which means 10.5 minutes for each pizza
+* To make 3 pizzas, it takes 29 minutes which means 9.6 minutes for each pizza
+* To prepare 5 pizzas, it takes an average of 15 minutes which means 3 minutes to make each pizza
+
+  From this data, we can say that more the number of pizzas to prepare in an order, lesser the time it will take
 
 **Q4. What was the average distance travelled for each customer?**
 
@@ -90,6 +98,7 @@ GROUP BY customer_id;
 
 ![b4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1bfd5ee8-515a-4a52-843c-aab6d039121a)
 
+* On an average, Customer 105 has the highest distance to travel with 25 KM and Customer 104 has the least distance to travel with 10 KM 
 
 **Q5. What was the difference between the longest and shortest delivery times for all orders?**
 
@@ -120,6 +129,10 @@ WHERE cancellation IS NULL;
 
 
 ![b6ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/13c5fb87-4c83-48fd-b632-74df30b5a089)
+
+* Runner 1's average speed ranges from 37.5 KM/hr to 60 KM/hr
+* Runner 2's average speed ranges from 35.1 KM/hr to 93.6 KM/hr. The difference of speed between lowest and highest is almost 3 times. We can further investigate to know the eaxct reason how and why the 93.6 KM/hr order was delivered so fast
+* Runner 3's average speed was 40 KM/hr
 
 **Q7. What is the successful delivery percentage for each runner?**
 
