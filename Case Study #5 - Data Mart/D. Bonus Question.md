@@ -193,8 +193,11 @@ FROM sales_before_after;
 * Only New customers responded positively to the new packaging change with 1% increase in sales compared to previou 12 weeks
 * Both Guest and Existing customers have shown negative impact on the new change with -3% and -2.2% decline in sales respectively
 
+  
 
-### Which areas of the business have the highest negative impact in sales metrics performance in 2020 for the 12 week before and after period?**
+### Conclusion:
+
+#### Which areas of the business have the highest negative impact in sales metrics performance in 2020 for the 12 week before and after period?**
 
 The areas which had the highest negative impact on the sales in 2020 for 12 weeks after the launch of new sustainable packaging are:
 
@@ -203,7 +206,7 @@ The areas which had the highest negative impact on the sales in 2020 for 12 week
 
   
 
-### Do you have any further recommendations for Danny’s team at Data Mart or any interesting insights based off this analysis?**
+#### Do you have any further recommendations for Danny’s team at Data Mart or any interesting insights based off this analysis?**
 
 **After looking at the negative impact of sustainable packaging change, these are my analysis and suggestions to Danny's team at Data Mart:**
 
