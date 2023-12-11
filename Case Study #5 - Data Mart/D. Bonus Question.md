@@ -119,6 +119,9 @@ FROM sales_before_after;
 
 ![d3ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/33cdcfcf-2658-4f82-b776-f1049ebb6382)
 
+* There is a negative impact on the sales irrespective of the age band
+  
+* The highest negative impact is from the age-band 'unknown' (-3.34%) while the least negative impact is from Young Adults(-0.92%)
 
 
 **4) demographic:**
