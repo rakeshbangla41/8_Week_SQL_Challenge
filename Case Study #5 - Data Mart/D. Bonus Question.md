@@ -154,7 +154,10 @@ FROM sales_before_after;
 
 ![d4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/ec917817-e67b-4882-92ed-483a5023ebe1)
 
-
+* Sustainable packaging had negative impact on sales irrespective of the demographic
+  
+* The impact varies from -3.34 (unknown) to -0.86 (Couples)
+  
 
 **5) customer_type:**
 
