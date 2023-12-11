@@ -46,12 +46,9 @@ FROM sales_before_after;
 
 ![d1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/83073b77-bb41-4f29-8978-142c54e93917)
 
-**region:**
-
 * The new sustainable packaging change had negative impact on all the region’s except for Europe. Europe is the only region which had an increase in sales by about +4.73%  which is quite significant given the context
 
 * The highest negative impact was in Asia with -3.26% decrease in sales    
-
 
 
 **2) platform:**
