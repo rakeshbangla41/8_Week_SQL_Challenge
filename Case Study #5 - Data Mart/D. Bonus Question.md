@@ -81,6 +81,13 @@ FROM sales_before_after;
 
 ![d2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/35f45945-2a22-40ef-8440-dc7f407e8d3f)
 
+* There is a decrease in sales by -2.4% in retail sales after packaging change
+  
+* Sales made through Shopify have increased by about 7.18% post sustainable packaging. This indicates that online customers are much more susceptible and positively respond 
+  to change than retail customers and Shopify is a good platform for implementing such changes in the future too
+
+  
+
 
 **3) age_band:**
 
