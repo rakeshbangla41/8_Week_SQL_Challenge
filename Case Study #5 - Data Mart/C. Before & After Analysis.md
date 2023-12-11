@@ -164,6 +164,17 @@ FROM total_sales_before_after;
 ![c4ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1582e5c3-cac2-4655-a3c6-3f5b603b4489)
 
 
+* We could see a good 1.62% increase in sales in 2018 compared to 12 weeks before  2018-06-15
+  
+* In 2019, there is a decline in sales percentage by -0.3% compared to 12 weeks before 2019-06-15
+  
+* But in 2020, after the implementation of sustainable packaging, there is a significant amount of decrease in sales by -2.137% compared to 12 weeks before the packaging change
+ 
+* This difference further more becomes damaging when we compare it with the best performing year 2018. There is a huge difference of -3.77% decrease in sales in 2020 compared to 2018
+
+
+
+
 
 
 
