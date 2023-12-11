@@ -40,7 +40,7 @@ FROM total_sales_before_after;
 ![c1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/ebc07984-b9be-4e02-a5bf-b47833cce4cd)
 
 
-* After the implementation of sustainable packaging, there has been a decrease of  $26,884,188 in sales. The percentage change in sales is about -1.146 compared to 4 weeks before the change.
+* After the implementation of sustainable packaging, there has been a decrease of  $26,884,188 in sales. The percentage change in sales is about -1.146% compared to 4 weeks before the change.
    
 * This indicates that the new plan of implementing sustainable packaging has not yet gained positive feedback from the customers. This negative change and impact usually happens in the market with the advent of new methodologies and processess since the general public is not acquinted to such things.
 
@@ -78,7 +78,7 @@ FROM total_sales_before_after;
 ![c2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/349542a0-8c0c-4e7c-8daa-e2e0105d17a2)  
 
 
-* Similarly, as we have seen in the previous scenario, implementation of sustainable packaging has negative impact on the sales. There has been a decrease of $152,325,394 in sales which amounts to -2.137% percentage change in sales.
+* Similarly, as we have seen in the previous scenario, implementation of sustainable packaging has negative impact on the sales. There has been a decrease of $152,325,394 in sales which amounts to -2.14% percentage change in sales.
 
 
 **Q3. How do the sale metrics for these 2 periods before and after compare with the previous years in 2018 and 2019?**
@@ -117,6 +117,16 @@ FROM total_sales_before_after;
 **Answer:**
 
 ![c3ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/1e0d699e-ae18-4819-9000-7cb5835c6a43)
+
+**4 week:**
+
+* In 2018, there is a positive change of 0.19% compared to the 4 week period before 2018-06-15     
+  
+* Similarly, in the year 2019, there is 0.10% positive change in sales compared to the 4 week period before the 2019-06-15
+      
+* But in 2020, after the implemantation of sustainable packaging, there is a decrease in sales which is about -1.146%
+  
+* This indicates that coming up with new processes and advancements may not always guarantee a positive result
 
 
 **# 12 week:**
