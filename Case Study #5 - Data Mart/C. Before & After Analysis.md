@@ -40,6 +40,11 @@ FROM total_sales_before_after;
 ![c1ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/ebc07984-b9be-4e02-a5bf-b47833cce4cd)
 
 
+* After the implementation of sustainable packaging, there has been a decrease of  $26,884,188 in sales. The percentage change in sales is about -1.146 compared to 4 weeks before the change.
+   
+* This indicates that the new plan of implementing sustainable packaging has not yet gained positive feedback from the customers. This negative change and impact usually happens in the market with the advent of new methodologies and processess since the general public is not acquinted to such things.
+
+
 **Q2. What about the entire 12 weeks before and after?**
 
 ```
