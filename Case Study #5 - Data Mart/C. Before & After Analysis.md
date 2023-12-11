@@ -75,7 +75,10 @@ FROM total_sales_before_after;
 
 **Answer:**
 
-![c2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/349542a0-8c0c-4e7c-8daa-e2e0105d17a2)
+![c2ans](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/349542a0-8c0c-4e7c-8daa-e2e0105d17a2)  
+
+
+* Similarly, as we have seen in the previous scenario, implementation of sustainable packaging has negative impact on the sales. There has been a decrease of $152,325,394 in sales which amounts to -2.137% percentage change in sales.
 
 
 **Q3. How do the sale metrics for these 2 periods before and after compare with the previous years in 2018 and 2019?**
