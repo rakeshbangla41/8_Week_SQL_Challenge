@@ -28,10 +28,12 @@ For solving these questions, I have used SQL (Structured Query Language). I have
    
 1)	creating new tables and inserting data into them  
 2)	creating temporary tables  
-3)	data cleaning and transformation:  
+3)	data cleaning and transformation:
+     
 a)	replacing blank spaces and null values  
 b)	removing unwanted strings/text from certain columns using regular expressions and replacing with appropriate values  
 c)	changing  columns with text data type to float data type    
+   
 5)	Concepts I have used in the project:
         
 *****a)	CREATE TABLE, DROP TABLE, IF EXISTS*****     
