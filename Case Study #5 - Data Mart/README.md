@@ -31,7 +31,9 @@ As a Data Analyst, I have been tasked with these questions. I have used MySQL Wo
 
 ## What I have learned by doing this project:   
 
-1)	data cleaning and transformation:
+1) creating new tables
+
+2)	data cleaning and transformation:
        
     a)	converted a ‘String’ data type column to ‘Date’ data type column  
     b)	extracted ‘week number’, ‘month number’ and ‘year’ from Date data type column  
