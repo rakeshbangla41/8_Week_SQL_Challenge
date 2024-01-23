@@ -25,14 +25,15 @@ freelance developers to build a mobile app to accept orders from customers.
 For solving these questions, I have used SQL (Structured Query Language). I have used MySQL Workbench to answer these questions and came up with valuable insights which could help the business to take better data-driven decisions.   
 
 ## What I have learned by doing this project:  
-
+   
 1)	creating new tables and inserting data into them  
 2)	creating temporary tables  
 3)	data cleaning and transformation:  
 a)	replacing blank spaces and null values  
 b)	removing unwanted strings/text from certain columns using regular expressions and replacing with appropriate values  
 c)	changing  columns with text data type to float data type    
-5)	Concepts I have used in the project:     
+5)	Concepts I have used in the project:
+        
 *****a)	CREATE TABLE, DROP TABLE, IF EXISTS*****     
 *****b)	DISTINCT, DISTINCTCOUNT, ALIAS, LIKE, AGGREGATE functions (SUM, MIN, MAX, COUNT), WHERE (filtering data), Logical AND, DATE and TIME functions*****      
 *****c)	INNER JOINs, Multiple INNER JOINs, GROUP BY, ORDER BY, LIMIT*****       
