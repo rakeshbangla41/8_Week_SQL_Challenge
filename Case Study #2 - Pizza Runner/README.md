@@ -20,6 +20,26 @@ freelance developers to build a mobile app to accept orders from customers.
 ![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/e83627bf-bb58-4631-a4a7-8265edc150ad)
 
 
+## Project Description:   
+
+For solving these questions, I have used SQL (Structured Query Language). I have used MySQL Workbench to answer these questions and came up with valuable insights which could help the business to take better data-driven decisions.   
+
+## What I have learned by doing this project:  
+
+1)	creating new tables and inserting data into them  
+2)	creating temporary tables  
+3)	data cleaning and transformation:  
+a)	replacing blank spaces and null values  
+b)	removing unwanted strings/text from certain columns using regular expressions and replacing with appropriate values
+
+c)	changing  columns with text data type to float data type  
+5)	Concepts I have used in the project:   
+a)	CREATE TABLE, DROP TABLE, IF EXISTS  
+b)	DISTINCT, DISTINCTCOUNT, ALIAS, LIKE, AGGREGATE functions (SUM, MIN, MAX, COUNT), WHERE (filtering data), Logical AND, DATE and TIME functions  
+c)	INNER JOINs, Multiple INNER JOINs, GROUP BY, ORDER BY, LIMIT  
+d)	Common Table Expression (CTE) and CASE statement  
+  
+
 ## Solutions:
 
 **Please click on the links below to access solutions for each section.**
