@@ -24,6 +24,28 @@ The key business question he wants you to help him answer are the following:
 ![erd](https://github.com/rakeshbangla41/8_Week_SQL_Challenge/assets/132288134/28bf8cca-f917-4dde-a17b-70430e75c861)
 
 
+## Project Description:   
+
+As a Data Analyst, I have been tasked with these questions. I have used MySQL Workbench to analyse the sales performance and have come up with relevant answers and recommendations.     
+
+
+## What I have learned by doing this project:   
+
+1)	data cleaning and transformation:
+       
+    a)	converted a ‘String’ data type column to ‘Date’ data type column  
+    b)	extracted ‘week number’, ‘month number’ and ‘year’ from Date data type column  
+c)	creating new tables and new columns as per the requirements
+
+3)	Concepts I have used in the project:
+     
+    *****a)	CREATE TABLE, DROP TABLE, IF EXISTS*****   
+    *****b)	DISTINCT, COUNT, AGGREGATE functions (COUNT, SUM, MAX), ALIAS, String functions, DATE and TIME functions, Converting data types – from string to date format, WHERE (filtering data), LIKE*****   
+    *****c)	OVER clause, Logical AND, GROUP BY, ORDER BY*****   
+    *****d)	Common Table Expression (CTE) and CASE statement*****     
+
+   
+
 ## Solutions:
 
 **Please click on the links below to access solutions for each section.**
